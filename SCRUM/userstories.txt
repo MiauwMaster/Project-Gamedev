@@ -1,0 +1,8 @@
+als gebruiker wil ik 	racen
+als gebruiker wil ik 	tegen iemand kunnen spelen
+asl gebruiker wil ik 	snelheid kunnen zien
+als gebruiker wil ik 	tankinhoud kunnen zien
+als gebruiker wil ik 	kunnen tanken
+			auto kunnen slopen
+			langzamer rijden op het gras
+			
