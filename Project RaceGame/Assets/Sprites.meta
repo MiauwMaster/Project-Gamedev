@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Project RaceGame/Assets/Sprites.meta
 guid: 40a08dbea6cd7aa429247b458594713a
 folderAsset: yes
 timeCreated: 1477309922
+=======
+guid: 117990c4913ce004ca74698ca4203202
+folderAsset: yes
+timeCreated: 1477306155
+>>>>>>> origin/master:Project RaceGame/Assets/Sprites.meta
 licenseType: Free
 DefaultImporter:
   userData: 
