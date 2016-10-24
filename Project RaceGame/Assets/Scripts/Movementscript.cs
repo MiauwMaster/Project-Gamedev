@@ -5,9 +5,10 @@ public class Movementscript : MonoBehaviour {
 
 	
     Rigidbody2D rigidbody2d;
-    public float speed = 20F;
-    public float backwspeed = 8F;
-    Rigidbody2D rigidbody;
+    public float speed = 2000F;
+    public float backwspeed = 1800F;
+    public float turnSpeed = 2;
+    public Rigidbody2D rb;
     // Use this for initialization
 	void Start () {
         GetComponent<Rigidbody2D>();
@@ -17,16 +18,19 @@ public class Movementscript : MonoBehaviour {
 	void Update () {
 
         if (Input.GetKey(KeyCode.W)) {
-            rigidbody.AddForce(transform.forward * speed * Time.deltaTime);
+            rb.AddForce(transform.forward * speed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.S)) {
-            rigidbody.AddForce(-(transform.forward) * backwspeed * Time.deltaTime);
+            rb.AddForce(-(transform.forward) * backwspeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.D)) {
-            transform.Rotate(0, 2, 0);
+            //rb.transform.Rotate(0, 0, 2);
+            rb.transform.Rotate(Vector3.forward * turnSpeed);
+            
         }
         if (Input.GetKey(KeyCode.A)) { 
-            transform.Rotate(0, -2, 0);
+            //rb.transform.Rotate(0, 0, -2);
+            rb.transform.Rotate(Vector3.forward * -turnSpeed);
         }
     }
 }
