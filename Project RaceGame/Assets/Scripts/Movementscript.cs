@@ -5,23 +5,10 @@ public class Movementscript : MonoBehaviour
 {
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     public static float power = 60;
     public float maxspeed = 80;
     public float turnpower = 2.5f;
-=======
-    public float power = 60;
-    public float maxspeed = 80;
-    public float turnpower = 2;
->>>>>>> origin/master
     public float friction = 2;
-=======
-    public float power = 3;
-    public float maxspeed = 5;
-    public float turnpower = 2;
-    public float friction = 3;
->>>>>>> parent of 37c6127... Versie 0.2.4
     public Vector2 curspeed;
     public Rigidbody2D rb;
 
