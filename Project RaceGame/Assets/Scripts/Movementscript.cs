@@ -5,10 +5,10 @@ public class Movementscript : MonoBehaviour
 {
 
 
-    public float power = 3;
-    public float maxspeed = 5;
+    public float power = 60;
+    public float maxspeed = 80;
     public float turnpower = 2;
-    public float friction = 3;
+    public float friction = 2;
     public Vector2 curspeed;
     public Rigidbody2D rb;
 
@@ -39,14 +39,20 @@ public class Movementscript : MonoBehaviour
             rb.AddForce(-(transform.up) * (power / 2));
             rb.drag = friction;
         }
-        if (Input.GetKey(KeyCode.A))
+
+        if (rb.drag == friction)
         {
-            transform.Rotate(Vector3.forward * turnpower);
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.Rotate(Vector3.forward * turnpower);
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                transform.Rotate(Vector3.forward * -turnpower);
+            }
         }
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.Rotate(Vector3.forward * -turnpower);
-        }
+
+        
 
         noGas();
 
