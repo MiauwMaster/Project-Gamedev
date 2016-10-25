@@ -5,9 +5,15 @@ public class Movementscript_p2 : MonoBehaviour
 {
 
 
+<<<<<<< HEAD:Project RaceGame/Assets/Scripts/Movementscript_p2.cs
     public static float power = 60;
     public float maxspeed = 80;
     public float turnpower = 2.5f;
+=======
+    public float power = 60;
+    public float maxspeed = 80;
+    public float turnpower = 2;
+>>>>>>> origin/master:Project RaceGame/Assets/Scripts/Movementscript_p2.cs
     public float friction = 2;
     public Vector2 curspeed;
     public Rigidbody2D rb;
@@ -39,15 +45,18 @@ public class Movementscript_p2 : MonoBehaviour
             rb.AddForce(-(transform.up) * (power / 2));
             rb.drag = friction;
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.Rotate(Vector3.forward * turnpower);
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.Rotate(Vector3.forward * -turnpower);
-        }
 
+        if (rb.drag == friction)
+        {
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                transform.Rotate(Vector3.forward * turnpower);
+            }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                transform.Rotate(Vector3.forward * -turnpower);
+            }
+        }
         noGas();
 
     }
