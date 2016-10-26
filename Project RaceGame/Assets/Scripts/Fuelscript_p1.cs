@@ -5,11 +5,13 @@ using System.Collections;
 public class Fuelscript_p1 : MonoBehaviour
 {
 
-    public float fuelcount;
+    public static float fuelcount;
+    public float fuelamount;
     public float fuelusage;
     // Use this for initialization
     void Start()
     {
+        fuelcount = fuelamount;
 
     }
 
@@ -17,7 +19,7 @@ public class Fuelscript_p1 : MonoBehaviour
     void FixedUpdate()
     {
 
-        if (Input.GetKey(KeyCode.W))
+        if ((Input.GetKey(KeyCode.W)) || (Input.GetKey(KeyCode.S)))
         {
             fuelcount = fuelcount - fuelusage * Time.deltaTime;
         }

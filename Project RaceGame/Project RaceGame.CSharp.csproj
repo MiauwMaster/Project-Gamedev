@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\Fuelscript_p2.cs" />
     <Compile Include="Assets\Scripts\Movementscript.cs" />
     <Compile Include="Assets\Scripts\Movementscript_p2.cs" />
+    <Compile Include="Assets\Scripts\pitstop.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Nieuw tekstdocument.txt" />

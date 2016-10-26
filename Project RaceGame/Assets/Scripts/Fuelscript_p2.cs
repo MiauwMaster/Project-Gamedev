@@ -5,7 +5,7 @@ using System.Collections;
 public class Fuelscript_p2 : MonoBehaviour
 {
 
-    public float fuelcount;
+    public static float fuelcount = 100;
     public float fuelusage;
     // Use this for initialization
     void Start()
