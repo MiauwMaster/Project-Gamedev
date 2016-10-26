@@ -64,16 +64,11 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Fuelscript_p1.cs" />
     <Compile Include="Assets\Scripts\Fuelscript_p2.cs" />
+    <Compile Include="Assets\Scripts\MenuSript.cs" />
     <Compile Include="Assets\Scripts\Movementscript.cs" />
     <Compile Include="Assets\Scripts\Movementscript_p2.cs" />
     <Compile Include="Assets\Scripts\pitstop.cs" />
