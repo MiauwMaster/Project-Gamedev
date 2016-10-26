@@ -32,7 +32,7 @@ public class Fuelscript_p2 : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(Screen.width - 100, 0, 100, 50), "Fuel: " + fuelcount);
+        GUI.Label(new Rect(Screen.width - 100, 10, 100, 50), "Fuel: " + fuelcount);
 
     }
 

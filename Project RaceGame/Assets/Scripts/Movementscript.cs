@@ -4,11 +4,11 @@ using System.Collections;
 public class Movementscript : MonoBehaviour
 {
 
-
+    
     public static float power = 60;
     public float maxspeed = 80;
     public float turnpower = 2.5f;
-    public float friction = 2;
+    public static float friction = 2;
     public Vector2 curspeed;
     public Rigidbody2D rb;
 
