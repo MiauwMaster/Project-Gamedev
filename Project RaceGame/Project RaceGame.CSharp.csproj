@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\MenuSript.cs" />
     <Compile Include="Assets\Scripts\Movementscript.cs" />
     <Compile Include="Assets\Scripts\Movementscript_p2.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Sand.cs" />
     <Compile Include="Assets\Scripts\lapcounterp1.cs" />
     <Compile Include="Assets\Scripts\lapcounterp2.cs" />
