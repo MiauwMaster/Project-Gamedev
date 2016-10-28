@@ -31,12 +31,4 @@ public class Fuelscript_p1 : MonoBehaviour
         }
 
     }
-
-    void OnGUI()
-    {
-        GUI.Label(new Rect(10, 10, 150, 20), "Fuel: " + fuelcount);
-
-    }
-
-
 }

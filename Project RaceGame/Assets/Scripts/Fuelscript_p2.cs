@@ -5,12 +5,13 @@ using System.Collections;
 public class Fuelscript_p2 : MonoBehaviour
 {
 
-    public static float fuelcount = 100;
+    public static float fuelcount;
+    public float fuelamount;
     public float fuelusage;
     // Use this for initialization
     void Start()
     {
-
+        fuelcount = fuelamount;
     }
 
     // Update is called once per frame
@@ -29,12 +30,4 @@ public class Fuelscript_p2 : MonoBehaviour
         }
 
     }
-
-    void OnGUI()
-    {
-        GUI.Label(new Rect(Screen.width - 100, 10, 100, 50), "Fuel: " + fuelcount);
-
-    }
-
-
 }

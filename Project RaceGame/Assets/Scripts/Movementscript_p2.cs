@@ -12,6 +12,7 @@ public class Movementscript_p2 : MonoBehaviour
     public static float friction = 2;
     public Vector2 curspeed;
     public Rigidbody2D rb;
+    public static int speed;
 
     // Use this for initialization
     void Start()
@@ -23,6 +24,8 @@ public class Movementscript_p2 : MonoBehaviour
     void FixedUpdate()
     {
         curspeed = new Vector2(rb.velocity.x, rb.velocity.y);
+        speed = Mathf.RoundToInt((float)(rb.velocity.magnitude * 3.6));
+
 
         if (curspeed.magnitude > maxspeed)
         {

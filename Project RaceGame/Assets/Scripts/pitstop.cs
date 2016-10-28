@@ -4,8 +4,8 @@ using System.Collections;
 public class pitstop : MonoBehaviour {
 
     public float refillAmount;
-    public int p1Pitstop;
-    public int p2Pitstop;
+    public static int p1Pitstop;
+    public static int p2Pitstop;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -46,12 +46,5 @@ public class pitstop : MonoBehaviour {
         {
             Movementscript_p2.friction = 2;
         }
-    }
-
-    void OnGUI()
-    {
-        GUI.Label(new Rect(10, 25, 150, 20), "Pitstops: " + p1Pitstop);
-        GUI.Label(new Rect(Screen.width - 100, 25, 100, 50), "Pitstops: " + p2Pitstop);
-
     }
 }

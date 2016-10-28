@@ -8,7 +8,7 @@ public class lapcounterp2 : MonoBehaviour
     public GameObject finish;
 
     public int checkpointCounter;
-    public int laps;
+    public static int laps;
 
     void Start()
     {
@@ -28,10 +28,5 @@ public class lapcounterp2 : MonoBehaviour
             laps += 1;
             checkpointCounter = 0;
         }
-    }
-
-    void OnGUI()
-    {
-        GUI.Label(new Rect(Screen.width - 100, 40, 150, 20), "laps: " + laps);
     }
 }
