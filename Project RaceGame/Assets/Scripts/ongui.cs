@@ -35,7 +35,6 @@ public class ongui : MonoBehaviour {
         GUI.Label(new Rect(10, 25, 150, 20), "Pitstops: " + pitstop.p1Pitstop);
         GUI.Label(new Rect(10, 40, 150, 20), "Laps: " + lapcounterp1.laps);
         GUI.Label(new Rect(10, 55, 150, 20), "Speed: " + Movementscript.speed);
-
         if (Fuelscript_p1.fuelcount <= lowFuelthreshold)
         {
             
