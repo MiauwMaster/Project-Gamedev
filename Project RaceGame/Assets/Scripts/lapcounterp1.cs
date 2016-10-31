@@ -8,27 +8,37 @@ public class lapcounterp1 : MonoBehaviour
 
     public int checkpointCounter;
     public static int laps;
-    public static bool p1win = false;
+    public int lapstofinish;
+    public bool finish = false;
+    public static bool p1win;
 
 	void Start ()
     {
         checkPointsList = GameObject.FindGameObjectsWithTag("CheckPoint");
 	}
-	
-	void OnTriggerEnter2D(Collider2D other)
+
+    void Update()
+    {
+        if (laps == lapstofinish)
+        {
+            finish = true;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "CheckPoint")
         {
             checkpointCounter += 1;
         }
 
-        if ((other.gameObject.tag == "Finish") && (checkpointCounter == checkPointsList.Length))
+        if ((other.gameObject.tag == "Finish") && (checkpointCounter >= checkPointsList.Length))
         {
             laps += 1;
             checkpointCounter = 0;
         }
 
-        if ((other.gameObject.tag == "Finish")&& (laps >= 3))
+        if ((other.gameObject.tag == "Finish") && (finish == true))
         {
             p1win = true;
         }

@@ -6,16 +6,16 @@ public class winnercheck : MonoBehaviour {
 
 
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
         {
-            if ((other.gameObject.tag == "player1") && (lapcounterp1.p1win == true))
+            if ((other.gameObject.name == "player1") && (lapcounterp1.p1win == true))
             {
-                 SceneManager.LoadScene(2);
+               SceneManager.LoadScene(2);
             }
     
-            if ((other.gameObject.tag == "player2") && (lapcounterp2.p2win == true))
+            if ((other.gameObject.name == "player2") && (lapcounterp2.p2win == true))
             {
                 SceneManager.LoadScene(3);
             }
-        }
+    }
 }

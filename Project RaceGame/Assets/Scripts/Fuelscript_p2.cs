@@ -29,5 +29,10 @@ public class Fuelscript_p2 : MonoBehaviour
             fuelcount = 0;
         }
 
+        if (fuelcount > fuelamount)
+        {
+            fuelcount = fuelamount;
+        }
+
     }
 }
