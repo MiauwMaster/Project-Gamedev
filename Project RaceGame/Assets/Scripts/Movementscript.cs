@@ -10,7 +10,7 @@ public class Movementscript : MonoBehaviour
     public float turnpower = 2.5f;
     public static float friction = 2;
     public Vector2 curspeed;
-    public static Rigidbody2D rb;
+    public Rigidbody2D rb;
     public static int speed;
 
     // Use this for initialization
@@ -42,7 +42,7 @@ public class Movementscript : MonoBehaviour
             rb.drag = friction;
         }
 
-        if (rb.drag == friction)
+        if (speed > 0)
         {
             if (Input.GetKey(KeyCode.A))
             {

@@ -10,12 +10,12 @@ public class winnercheck : MonoBehaviour {
         {
             if ((other.gameObject.tag == "player1") && (lapcounterp1.p1win == true))
             {
-             SceneManager.LoadScene(3);
+                 SceneManager.LoadScene(2);
             }
     
-         if ((other.gameObject.tag == "player2") && (lapcounterp2.p2win == true))
+            if ((other.gameObject.tag == "player2") && (lapcounterp2.p2win == true))
             {
-             SceneManager.LoadScene(3);
+                SceneManager.LoadScene(3);
             }
         }
 }

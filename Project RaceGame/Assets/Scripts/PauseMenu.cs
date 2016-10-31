@@ -1,14 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour {
     public Transform canvas;
     public Transform pauseMenu;
     public Transform settingsMenu;
 
-    public void LoadScene(string name)
+    public void LoadScene(int level)
     {
-        Application.LoadLevel(name);
+        SceneManager.LoadScene(level);
     }
 
     // Update is called once per frame

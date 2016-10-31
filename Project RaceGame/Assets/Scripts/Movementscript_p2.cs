@@ -44,7 +44,7 @@ public class Movementscript_p2 : MonoBehaviour
             rb.drag = friction;
         }
 
-        if (rb.drag == friction)
+        if (speed > 0)
         {
             if (Input.GetKey(KeyCode.LeftArrow))
             {

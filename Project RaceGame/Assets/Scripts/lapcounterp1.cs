@@ -1,16 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class lapcounterp1 : MonoBehaviour {
+public class lapcounterp1 : MonoBehaviour
+{
 
     public GameObject[] checkPointsList;
     public GameObject finish;
 
     public int checkpointCounter;
     public static int laps;
+    public int lapsToWin;
     public static bool p1win = false;
 
-	void Start () {
+	void Start ()
+    {
         checkPointsList = GameObject.FindGameObjectsWithTag("CheckPoint");
         finish = GameObject.FindGameObjectWithTag("Finish");
 	}
@@ -28,7 +31,7 @@ public class lapcounterp1 : MonoBehaviour {
             checkpointCounter = 0;
         }
 
-        if ((other.gameObject.tag == "Finish") && (laps >= 3))
+        if ((other.gameObject.tag == "Finish") && (laps >= lapsToWin))
         {
             p1win = true;
         }
