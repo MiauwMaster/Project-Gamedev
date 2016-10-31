@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MenuSript : MonoBehaviour {
 
     public Transform mainMenu, optionsMenu;
 
-    public void LoadScene(string name)
+    public void LoadScene(int level)
     {
-        Application.LoadLevel(name);
+        SceneManager.LoadScene(level);
     }
 
     public void QuitGame()

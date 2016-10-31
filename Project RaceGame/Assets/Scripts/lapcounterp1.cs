@@ -8,6 +8,7 @@ public class lapcounterp1 : MonoBehaviour {
 
     public int checkpointCounter;
     public static int laps;
+    public static bool p1win = false;
 
 	void Start () {
         checkPointsList = GameObject.FindGameObjectsWithTag("CheckPoint");
@@ -25,6 +26,11 @@ public class lapcounterp1 : MonoBehaviour {
         {
             laps += 1;
             checkpointCounter = 0;
+        }
+
+        if ((other.gameObject.tag == "Finish") && (laps >= 3))
+        {
+            p1win = true;
         }
     }
 }

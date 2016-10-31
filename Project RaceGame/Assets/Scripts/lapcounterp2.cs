@@ -9,6 +9,7 @@ public class lapcounterp2 : MonoBehaviour
 
     public int checkpointCounter;
     public static int laps;
+    public static bool p2win;
 
     void Start()
     {
@@ -27,6 +28,11 @@ public class lapcounterp2 : MonoBehaviour
         {
             laps += 1;
             checkpointCounter = 0;
+        }
+
+        if ((other.gameObject.tag == "Finish") && (laps >= 3))
+        {
+            p2win = true;
         }
     }
 }
