@@ -72,6 +72,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Bulletscript_p1.cs" />
+    <Compile Include="Assets\Scripts\Bulletscript_p2.cs" />
     <Compile Include="Assets\Scripts\Fuelscript_p1.cs" />
     <Compile Include="Assets\Scripts\Fuelscript_p2.cs" />
     <Compile Include="Assets\Scripts\MenuSript.cs" />

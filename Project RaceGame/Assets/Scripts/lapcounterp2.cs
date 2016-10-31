@@ -5,17 +5,14 @@ public class lapcounterp2 : MonoBehaviour
 {
 
     public GameObject[] checkPointsList;
-    public GameObject finish;
 
     public int checkpointCounter;
     public static int laps;
-    public int lapsToWin;
     public static bool p2win = false;
 
     void Start()
     {
         checkPointsList = GameObject.FindGameObjectsWithTag("CheckPoint");
-        finish = GameObject.FindGameObjectWithTag("Finish");
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -31,7 +28,7 @@ public class lapcounterp2 : MonoBehaviour
             checkpointCounter = 0;
         }
 
-        if ((other.gameObject.tag == "Finish") && (laps >= lapsToWin))
+        if ((other.gameObject.tag == "Finish") && (laps >= 3))
         {
             p2win = true;
         }
