@@ -33,8 +33,11 @@ public class ongui : MonoBehaviour {
         //player 1
         GUI.Label(new Rect(10, 10, 150, 20), "Fuel: " + Mathf.RoundToInt(Fuelscript_p1.fuelcount));
         GUI.Label(new Rect(10, 25, 150, 20), "Pitstops: " + pitstop.p1Pitstop);
-        GUI.Label(new Rect(10, 40, 150, 20), "Laps: " + lapcounterp1.laps);
+        GUI.Label(new Rect(10, 40, 150, 20), "Laps: " + lapcounterp1.laps + "/3");
         GUI.Label(new Rect(10, 55, 150, 20), "Speed: " + Movementscript.speed);
+        GUI.Label(new Rect(10, 70, 150, 20), "power: " + Movementscript.power);
+
+
         if (Fuelscript_p1.fuelcount <= lowFuelthreshold)
         {
             
@@ -44,8 +47,10 @@ public class ongui : MonoBehaviour {
         //player2
         GUI.Label(new Rect(Screen.width - 100, 10, 100, 50), "Fuel: " + Mathf.RoundToInt(Fuelscript_p2.fuelcount));
         GUI.Label(new Rect(Screen.width - 100, 25, 100, 50), "Pitstops: " + pitstop.p2Pitstop);
-        GUI.Label(new Rect(Screen.width - 100, 40, 100, 50), "Laps: " + lapcounterp2.laps);
+        GUI.Label(new Rect(Screen.width - 100, 40, 100, 50), "Laps: " + lapcounterp2.laps + "/3");
         GUI.Label(new Rect(Screen.width - 100, 55, 100, 50), "Speed: " + Movementscript_p2.speed);
+        GUI.Label(new Rect(Screen.width - 100, 70, 100, 50), "power: " + Movementscript_p2.power);
+
 
         if (Fuelscript_p2.fuelcount <= lowFuelthreshold)
         {
