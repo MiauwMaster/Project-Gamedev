@@ -4,8 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class EndScene : MonoBehaviour {
 
-    public void LoadScene(int level)
+    public void QuitGame()
     {
-        SceneManager.LoadScene(level);
+        Application.Quit();
     }
+    
 }
