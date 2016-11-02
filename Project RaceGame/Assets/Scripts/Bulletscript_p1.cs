@@ -1,32 +1,42 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;   
+using System.Collections.Generic;
 
-public class Bulletscript_p1 : MonoBehaviour {
+public class Bulletscript_p1 : MonoBehaviour
+{
 
-    GameObject Bulletprefab;
+    public GameObject Kappa;
+    int limit = 8;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    // Use this for initialization
+    void Start()
+    {
 
-        if (Input.GetKey(KeyCode.E))
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            Firebullet();
+            if (limit > 0)
+            {
+                Firebullet();
+
+                limit -= 1;
+            }
+
         }
-	
-	}
+
+    }
 
     public void Firebullet()
     {
         GameObject Clone;
 
-        Clone = (Instantiate(Bulletprefab, transform.position, transform.rotation)) as GameObject;
+        Clone = (Instantiate(Kappa, transform.position, transform.rotation)) as GameObject;
 
-        Clone.GetComponent<Rigidbody>().AddForce(1000, 0, 0);
+
     }
 }

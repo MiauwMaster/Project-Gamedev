@@ -5,7 +5,8 @@ using System.Collections.Generic;
 public class Bulletscript_p2 : MonoBehaviour
 {
 
-    GameObject Bulletprefab;
+    public GameObject Pepe1;
+    int limit = 8;
 
     // Use this for initialization
     void Start()
@@ -17,9 +18,15 @@ public class Bulletscript_p2 : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKey(KeyCode.RightShift))
+        if (Input.GetKeyDown(KeyCode.RightShift))
         {
-            Firebullet();
+            if (limit > 0)
+            {
+                Firebullet();
+
+                limit -= 1;
+            }
+
         }
 
     }
@@ -28,8 +35,6 @@ public class Bulletscript_p2 : MonoBehaviour
     {
         GameObject Clone;
 
-        Clone = (Instantiate(Bulletprefab, transform.position, transform.rotation)) as GameObject;
-
-        Clone.GetComponent<Rigidbody>().AddForce(1000, 0, 0);
+        Clone = (Instantiate(Pepe1, transform.position, transform.rotation)) as GameObject;
     }
 }
