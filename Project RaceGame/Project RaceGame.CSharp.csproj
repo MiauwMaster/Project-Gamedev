@@ -89,8 +89,5 @@
     <Compile Include="Assets\Scripts\start.cs" />
     <Compile Include="Assets\Scripts\winnercheck.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\Sprites\Nieuw tekstdocument.txt" />
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

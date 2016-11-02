@@ -19,7 +19,7 @@ public class SpeedBooster : MonoBehaviour {
             StartCoroutine(Boostp1());
         }
 
-        if (other.gameObject.tag == "player1")
+        if (other.gameObject.tag == "player2")
         {
             StartCoroutine(Boostp2());
         }
