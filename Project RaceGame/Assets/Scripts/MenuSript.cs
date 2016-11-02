@@ -16,17 +16,4 @@ public class MenuSript : MonoBehaviour {
         Application.Quit();
     }
 
-    public void OptionsMenu(bool clicked)
-    {
-        if (clicked == true)
-        {
-            optionsMenu.gameObject.SetActive(clicked);
-            mainMenu.gameObject.SetActive(false);
-        }
-        else
-        {
-            optionsMenu.gameObject.SetActive(clicked);
-            mainMenu.gameObject.SetActive(true);
-        }
-    }
 }

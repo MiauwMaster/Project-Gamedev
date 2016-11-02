@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour {
     public Transform canvas;
     public Transform pauseMenu;
-    public Transform settingsMenu;
+   
 
     public void LoadScene(int level)
     {
@@ -27,8 +27,7 @@ public class PauseMenu : MonoBehaviour {
             if (pauseMenu.gameObject.activeInHierarchy == false)
             {
                 pauseMenu.gameObject.SetActive(true);
-                settingsMenu.gameObject.SetActive(false);
-
+                
             }
             canvas.gameObject.SetActive(true);
             Time.timeScale = 0;
@@ -39,19 +38,6 @@ public class PauseMenu : MonoBehaviour {
             Time.timeScale = 1;
         }
     }
-        public void Settings(bool Open)
-    {
-        if (Open)
-        {
-            settingsMenu.gameObject.SetActive(true);
-            pauseMenu.gameObject.SetActive(false);
-        }
-        if (!Open)
-        {
-            settingsMenu.gameObject.SetActive(false);
-            pauseMenu.gameObject.SetActive(true);
 
-        }
-    }
 	
 }
