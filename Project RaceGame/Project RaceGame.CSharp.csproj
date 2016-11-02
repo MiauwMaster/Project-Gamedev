@@ -86,6 +86,7 @@
     <Compile Include="Assets\Scripts\lapcounterp2.cs" />
     <Compile Include="Assets\Scripts\ongui.cs" />
     <Compile Include="Assets\Scripts\pitstop.cs" />
+    <Compile Include="Assets\Scripts\start.cs" />
     <Compile Include="Assets\Scripts\winnercheck.cs" />
   </ItemGroup>
   <ItemGroup>
