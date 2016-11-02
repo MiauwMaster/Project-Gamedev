@@ -15,6 +15,8 @@ public class lapcounterp2 : MonoBehaviour
     void Start()
     {
         checkPointsList = GameObject.FindGameObjectsWithTag("CheckPoint");
+        laps = 0;
+        finish = false;
     }
 
     void Update()

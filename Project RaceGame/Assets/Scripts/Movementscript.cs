@@ -17,6 +17,8 @@ public class Movementscript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        power = 60;
+        friction = 2;
     }
 
 
