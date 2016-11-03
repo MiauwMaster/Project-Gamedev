@@ -4,8 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class MenuSript : MonoBehaviour {
 
-    public Transform mainMenu, optionsMenu;
-
     public void LoadScene(int level)
     {
         SceneManager.LoadScene(level);
